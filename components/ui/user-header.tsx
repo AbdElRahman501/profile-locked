@@ -62,7 +62,7 @@ export const UserHeader: React.FC = () => {
       </div>
 
       {/* Information and Career Interests Section */}
-      <div className="bg-foreground-primary border-secondary-border flex flex-wrap gap-10 border p-5">
+      <div className="flex flex-wrap gap-10 border border-secondary-border bg-foreground-primary p-5">
         {/* Information Section */}
         <div className="flex-1">
           <p
@@ -72,7 +72,7 @@ export const UserHeader: React.FC = () => {
             Information
           </p>
           <ul
-            className="list-disc pl-5 text-xs"
+            className="min-w-40 list-disc pl-5 text-xs"
             aria-label="User information list"
           >
             <li aria-label="Nationality: Egypt">Nationality: Egypt</li>
@@ -96,7 +96,7 @@ export const UserHeader: React.FC = () => {
             Career Interests
           </p>
           <ul
-            className="list-disc pl-5 text-xs"
+            className="min-w-40 list-disc pl-5 text-xs"
             aria-label="Career interests list"
           >
             <li aria-label="Job Type: Full Time, Part Time, Internship, Shift Based Job">

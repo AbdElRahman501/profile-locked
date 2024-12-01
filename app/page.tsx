@@ -29,7 +29,7 @@ export default function Home() {
         </InfoSection>
 
         {/* Work Experience */}
-        <InfoSection title="Work Experience" className="pb-0">
+        <InfoSection title="Work Experience">
           {user.workExperience.map((exp, index) => (
             <ExperienceCard
               key={index}
@@ -37,13 +37,10 @@ export default function Home() {
               aria-label={`Work experience item ${index + 1}`}
             />
           ))}
-          <button className="text-light-primary w-full py-2 text-center font-semibold hover:underline">
-            <p>Show 2 more educations</p>
-          </button>
         </InfoSection>
 
         {/* Education Section */}
-        <InfoSection title="Education">
+        <InfoSection title="Education" className="pb-0">
           {user.education.map((edu, index) => (
             <EducationCard
               key={index}
@@ -51,11 +48,14 @@ export default function Home() {
               aria-label={`Education item ${index + 1}`}
             />
           ))}
+          <button className="w-full py-3 text-center font-semibold text-light-primary hover:underline">
+            <p>Show 2 more educations</p>
+          </button>
         </InfoSection>
 
         {/* Skills Section */}
         <InfoSection title="Skills">
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-2 md:gap-4">
             {user.skills.map((skill) => (
               <Button
                 key={skill}
