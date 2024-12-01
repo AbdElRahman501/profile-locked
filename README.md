@@ -1,4 +1,4 @@
-# Profile Lock Dashboard
+# [Profile Lock Dashboard](https://profile-locked.vercel.app/)
 
 ## Project Description
 
@@ -17,14 +17,14 @@ This page is responsive, meaning it adjusts to different screen sizes and is des
 
 ## Demo
 
-- Live Demo: [demo.com](http://demo.com) _(this will be a placeholder until the actual link is available)_
+- Live Demo: [demo.com](https://profile-locked.vercel.app/)
 
 ## Installation Instructions
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/profile-lock-dashboard.git
+   git clone https://github.com/AbdElRahman501/profile-locked.git
    ```
 
 2. Navigate into the project directory:
@@ -55,7 +55,7 @@ This page is responsive, meaning it adjusts to different screen sizes and is des
 
 ## Screenshots
 
-- ![Dashboard Page](public/screen.png)
+![Dashboard Page](public/screen.png)
 
 ## Contact
 

@@ -21,7 +21,6 @@ export const DropDownButton: React.FC<
   return (
     <button
       type="button"
-      aria-expanded="false"
       aria-haspopup="true"
       {...props}
       className={`group-focus-within:opacity-100 ${props.className || ""}`}
@@ -43,7 +42,7 @@ export const DropDownList: React.FC<
       aria-labelledby="menu-button"
       tabIndex={-1}
       {...props}
-      className={`hidden hover:block group-focus-within:block group-aria-expanded:block ${props.className || ""}`}
+      className={`hidden hover:block group-focus-within:block aria-expanded:block ${props.className || ""}`}
     >
       {children}
     </ul>

@@ -24,7 +24,6 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   return (
     <div
       className="border-b-secondary-border flex items-center gap-5 border-b py-2"
-      role="listitem"
       aria-label={`${title} from ${start} to ${end}`}
     >
       {/* Organization Logo */}

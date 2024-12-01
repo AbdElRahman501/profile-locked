@@ -21,7 +21,6 @@ export const EducationCard: React.FC<EducationCardProps> = ({
   return (
     <div
       className="border-b-secondary-border flex items-center gap-5 border-b py-2"
-      role="listitem"
       aria-label={`${degree} at ${title} (${duration})`}
     >
       {/* Institution Logo */}

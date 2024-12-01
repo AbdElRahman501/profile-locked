@@ -17,26 +17,41 @@ const SideMenuItem: React.FC<SideMenuItemType> = ({
 }) => {
   // Render a divider
   if (kind === "divider") {
-    return <div className="my-5 h-px bg-gray-200" />;
+    return (
+      <li>
+        <div className="my-5 h-px bg-gray-200" />
+      </li>
+    );
   }
   if (kind === "title") {
     return (
-      <p
-        className={
-          "flex w-full min-w-60 items-center justify-between px-4 py-3 text-sm uppercase opacity-60"
-        }
-      >
-        {title}
-      </p>
+      <li>
+        <p
+          className={
+            "flex w-full min-w-60 items-center justify-between px-4 py-3 text-sm uppercase opacity-60"
+          }
+        >
+          {title}
+        </p>
+      </li>
     );
   }
   // Render a dropdown menu item if it has children
   if (children && children.length > 0) {
-    return <DropDownMenuItem title={title} children={children} icon={icon} />;
+    return (
+      <li>
+        {" "}
+        <DropDownMenuItem title={title} children={children} icon={icon} />
+      </li>
+    );
   }
 
   // Render a link item
-  return <LinkItem title={title} link={link} icon={icon} />;
+  return (
+    <li>
+      <LinkItem title={title} link={link} icon={icon} />
+    </li>
+  );
 };
 
 export default SideMenuItem;

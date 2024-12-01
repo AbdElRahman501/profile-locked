@@ -26,10 +26,10 @@ export const DropDownMenuItem: React.FC<SideMenuItemType> = ({
   );
 
   return (
-    <DropDown aria-expanded={!!isActive}>
+    <DropDown>
       <DropDownButton
-        className="flex w-full min-w-60 items-center justify-between px-4 py-3 opacity-50 group-focus-within:opacity-100 group-aria-expanded:opacity-100"
-        aria-label={title}
+        aria-expanded={isActive}
+        className="flex w-full min-w-60 items-center justify-between px-4 py-3 opacity-50 group-focus-within:opacity-100 aria-expanded:opacity-100"
       >
         <div className="flex items-center justify-center gap-4">
           {Icon && <Icon className="h-6 w-6" />}
@@ -37,9 +37,9 @@ export const DropDownMenuItem: React.FC<SideMenuItemType> = ({
         </div>
         {children ? <ChevronDown className="h-4 w-4" /> : null}
       </DropDownButton>
-      <DropDownList>
+      <DropDownList aria-expanded={isActive}>
         {children && (
-          <li className="flex flex-col bg-white pl-2">
+          <li role="menuitem" className="flex flex-col bg-white pl-2">
             {children.map((item, index) => (
               <LinkItem key={index} {...item} />
             ))}
