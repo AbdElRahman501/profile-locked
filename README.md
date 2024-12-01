@@ -30,7 +30,7 @@ This page is responsive, meaning it adjusts to different screen sizes and is des
 2. Navigate into the project directory:
 
    ```bash
-   cd profile-lock-dashboard
+   cd profile-locked
    ```
 
 3. Install dependencies:
