@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Profile Lock Dashboard
 
-## Getting Started
+## Project Description
 
-First, run the development server:
+The **Profile Lock Dashboard** is a fully responsive web page built using **Next.js** and **Tailwind CSS**. It is designed as a user dashboard, featuring a sidebar with sections for profile information, job management, and various other features like billing, report generation, and CV search. The dashboard includes a profile lock feature where users can unlock and access more detailed profile information.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This page is responsive, meaning it adjusts to different screen sizes and is designed to offer a smooth and accessible user experience.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Sidebar Navigation**: Includes links to "Dashboard", "My Jobs", "CV Search", "Billing", "Report", and more.
+- **Profile Information**: Displays essential information about the user, including name, profile picture, location, years of experience, and career interests.
+- **Profile Security**: A "Profile Lock" feature that lets users unlock their profile to access contact details.
+- **Languages**: Displays proficiency in multiple languages (Arabic, English, French).
+- **Experience & Education**: Lists the user’s work experience, education history, and skills.
+- **Mobile-First Design**: Fully responsive and optimized for mobile and desktop views.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Demo
 
-## Learn More
+- Live Demo: [demo.com](http://demo.com) _(this will be a placeholder until the actual link is available)_
 
-To learn more about Next.js, take a look at the following resources:
+## Installation Instructions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   git clone https://github.com/yourusername/profile-lock-dashboard.git
+   ```
 
-## Deploy on Vercel
+2. Navigate into the project directory:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   cd profile-lock-dashboard
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and go to `http://localhost:3000` to view the app.
+
+## Technologies Used
+
+- **Next.js** (Version 14.2.5) for building the app.
+- **TypeScript** for strong typing and better development experience.
+- **Tailwind CSS** (Version 3.4.15) for responsive and utility-first styling.
+
+## Screenshots
+
+- ![Dashboard Page](public/screen.png)
+
+## Contact
+
+For any questions or further assistance, feel free to reach out at [Abdelrahman.6182@gmail.com].
