@@ -15,7 +15,7 @@ const InfoSection: React.FC<InfoSectionProps> = ({
   return (
     <div
       className={cn(
-        "bg-foreground-primary border-secondary-border mt-5 w-full border p-10 py-5",
+        "mt-5 w-full border border-secondary-border bg-foreground-primary p-10 py-5",
         className,
       )}
       role="region"

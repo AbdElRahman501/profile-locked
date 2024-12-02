@@ -13,7 +13,7 @@ export default {
         "light-primary": "var(--light-primary)",
         secondary: "var(--secondary)",
         foreground: "var(--foreground)",
-        "foreground-primary": "var(--foreground-2)",
+        "foreground-primary": "var(--primary-foreground)",
         "secondary-border": "var(--border)",
       },
       fontFamily: {
